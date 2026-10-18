@@ -6,6 +6,6 @@ ALTER DATABASE petclinic
 
 CREATE USER IF NOT EXISTS 'petclinic'@'%' IDENTIFIED BY 'petclinic';
 
-GRANT ALL PRIVILEGES ON petclinic.* TO 'petclinic'@'%';
+GRANT SELECT, INSERT, UPDATE, DELETE ON petclinic.* TO 'petclinic'@'%';
 
 FLUSH PRIVILEGES;
