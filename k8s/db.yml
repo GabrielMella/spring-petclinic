@@ -1,4 +1,6 @@
 ---
+# IMPORTANT: Replace the username and password values below with real credentials
+# before deploying. Do not commit actual credentials to version control.
 apiVersion: v1
 kind: Secret
 metadata:
@@ -10,8 +12,8 @@ stringData:
   host: "demo-db"
   port: "5432"
   database: "petclinic"
-  username: "user"
-  password: "pass"
+  username: "REPLACE_ME_WITH_REAL_USERNAME"
+  password: "REPLACE_ME_WITH_STRONG_PASSWORD"
 
 ---
 apiVersion: v1
